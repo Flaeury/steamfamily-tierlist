@@ -1,6 +1,6 @@
-## Getting Started
+## Primeiros Passos
 
-First, run the development server:
+Rode no terminal:
 
 ```bash
 npm install 
