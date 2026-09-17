@@ -28,7 +28,9 @@ export default function LoginPage() {
   return (
     <Box sx={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", bgcolor: "#171a21" }}>
       <Paper sx={{ p: 4, width: 360 }}>
-        <Typography variant="h5" fontWeight="bold" gutterBottom>🎮 Entrar</Typography>
+        <Typography variant="h5" sx={{ fontWeight: "bold" }} gutterBottom>
+          Entrar
+        </Typography>
         {error && <Alert severity="error" sx={{ mb: 2 }}>{error}</Alert>}
         <Box component="form" onSubmit={handleSubmit} sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
           <TextField label="Usuário" value={username} onChange={(e) => setUsername(e.target.value)} required />
