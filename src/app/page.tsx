@@ -11,8 +11,9 @@ interface GameRow { appid: number; name: string; purchased: boolean; likes: { us
 
 const BANNED_WORDS = [
   "hentai", "nsfw", "18+", "porn", "sex",
-  "digital artbook", "digital art book", "art book",
+  "digital artbook", "digital art book", "art book", "artbook",
   "soundtrack dlc", "soundtrack", "soundtrack trailer",
+  "dlc", "trailer", "demo", "beta", "early access",
 ];
 const isAllowed = (name: string) => !BANNED_WORDS.some((w) => name.toLowerCase().includes(w));
 
