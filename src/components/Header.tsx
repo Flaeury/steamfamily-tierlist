@@ -28,7 +28,7 @@ export default function Header({ search, onSearchChange, onToggleSidebar }: Prop
       <Toolbar sx={{ gap: 2 }}>
         <IconButton color="inherit" onClick={onToggleSidebar}><MenuIcon /></IconButton>
         <Typography variant="h6" sx={{ color: "#66c0f4", fontWeight: 700, whiteSpace: "nowrap" }}>
-          Family Steam
+          Tier List - Steam
         </Typography>
         <Box sx={{ display: "flex", alignItems: "center", bgcolor: "#0f1720", borderRadius: 1, px: 1, flexGrow: 1, maxWidth: 500 }}>
           <SearchIcon sx={{ color: "#8f98a0" }} />
