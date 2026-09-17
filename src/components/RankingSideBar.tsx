@@ -62,7 +62,15 @@ export default function RankingSidebar({ open, onClose, ranking }: Props) {
           <ListItem key={g.appid} sx={{ borderBottom: "1px solid rgba(255,255,255,0.05)" }}>
             <Typography sx={{ width: 24, color: "text.secondary", fontWeight: 700 }}>#{i + 4}</Typography>
             <Avatar variant="rounded" src={cover(g.appid)} sx={{ width: 40, height: 22, mr: 1 }} />
-            <ListItemText primary={g.name} primaryTypographyProps={{ noWrap: true, sx: { fontSize: 14 } }} />
+            <ListItemText
+              primary={g.name}
+              slotProps={{
+                primary: {
+                  noWrap: true,
+                  sx: { fontSize: 14 },
+                },
+              }}
+            />
             <Chip label={g.likes} size="small" />
           </ListItem>
         ))}
