@@ -27,7 +27,7 @@ export default function RegisterPage() {
   return (
     <Box sx={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", bgcolor: "#171a21" }}>
       <Paper sx={{ p: 4, width: 360 }}>
-        <Typography variant="h5" sx={{ fontWeight: 700 }} gutterBottom>🎮 Criar conta</Typography>
+        <Typography variant="h5" sx={{ fontWeight: 700 }} gutterBottom> Criar conta</Typography>
         {error && <Alert severity="error" sx={{ mb: 2 }}>{error}</Alert>}
         {success && <Alert severity="success" sx={{ mb: 2 }}>{success}</Alert>}
         <Box component="form" onSubmit={handleSubmit} sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
